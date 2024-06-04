@@ -1,0 +1,232 @@
+<!--BC footer cambio-->
+
+<footer class="text-lg-start pt-3 pb-1">
+
+  <div *ngIf="showTopFooter" class="top-footer">
+
+    <div class="container p-2">
+
+      <div class="row">
+
+        <!-- Grid column 1 -->
+
+        <div class="col-lg-4 col-md-6 mb-3 mb-lg-0">
+
+          <h5 class="text-uppercase text-white" translate>Footer Content</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li><a routerLink="./" class="text-white" translate>Lorem ipsum</a></li>
+            <li><a routerLink="./" class="text-white" translate>Ut facilisis</a></li>
+            <li><a routerLink="./" class="text-white" translate>Aenean sit</a></li>
+          </ul>
+
+        </div>
+
+        <!-- Grid column 2 -->
+
+        <div class="col-lg-4 col-md-6 mb-3 mb-lg-0">
+
+          <h5 class="text-uppercase text-white" translate>Footer Content</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li><a routerLink="./" class="text-white" translate>Suspendisse potenti</a></li>
+          </ul>
+
+        </div>
+
+        <!-- Grid column 3 -->
+
+        <div class="col-lg-4 col-md-12 mb-3 mb-md-0">
+
+          <h5 class="text-uppercase text-white" translate>Footer Content</h5>
+
+          <p class="text-white" translate>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur
+            maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Grid container -->
+
+  <div class="container p-2">
+
+    <!-- Section: Links -->
+
+    <section class="">
+
+      <!--Grid row-->
+
+      <div class="row">
+
+        <!-- Grid column -->
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-2">
+
+          <h6 class="text-uppercase mb-3 font-weight-bold text-white" translate>
+            Company name
+          </h6>
+
+          <p class="text-white" translate>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.
+          </p>
+
+        </div>
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+
+          <h6 class="text-uppercase mb-3 font-weight-bold text-white" translate>
+            Products
+          </h6>
+
+          <p class="text-white" translate>
+            <a class="text-white" translate>MDBootstrap</a>
+          </p>
+
+          <p class="text-white" translate>
+            <a class="text-white" translate>MDWordPress</a>
+          </p>
+
+          <p class="text-white" translate>
+            <a class="text-white" translate>BrandFlow</a>
+          </p>
+
+          <p class="text-white" translate>
+            <a class="text-white" translate>Bootstrap Angular</a>
+          </p>
+
+        </div>
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-2">
+
+          <h6 class="text-uppercase mb-3 font-weight-bold text-white" translate>
+            Useful links
+          </h6>
+
+          <p class="text-white" translate>
+            <a class="text-white" translate>Your Account</a>
+          </p>
+
+          <p class="text-white" translate>
+            <a class="text-white" translate>Become an Affiliate</a>
+          </p>
+
+          <p class="text-white" translate>
+            <a class="text-white" translate>Shipping Rates</a>
+          </p>
+
+          <p class="text-white" translate>
+            <a class="text-white" translate>Help</a>
+          </p>
+
+        </div>
+
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-2">
+
+          <h6 class="text-uppercase mb-3 font-weight-bold text-white" translate>
+            Contact
+          </h6>
+
+          <p class="text-white"><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+
+          <p class="text-white"><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+
+          <p class="text-white"><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+
+          <p class="text-white"><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Section: Links -->
+
+    <hr class="my-2" style="border-top: 1px solid white;"> <!-- White divider -->
+
+    <!-- Section: Social media and Configuration links -->
+
+    <section class="mb-2">
+
+      <div class="row d-flex align-items-center">
+
+        <!-- Configuration of Cookies -->
+
+        <div class="col-md-6 col-6 text-start">
+          <li>
+          <a class="text-white" href="javascript:void(0);" (click)="showCookieSettings()" translate>
+            {{ 'footer.link.cookies' }}
+          </a>
+          </li>
+          <li *ngIf="showSendFeedback$ | async">
+          <a class="text-white"
+          routerLink="info/feedback">{{ 'footer.link.feedback' | translate}}</a>
+          </li>
+        </div>
+
+        <!-- Social Media Icons -->
+
+        <div class="col-md-6 col-6 text-end">
+
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
+
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-twitter"></i></a>
+
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-google"></i></a>
+
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Section: Social media and Configuration links -->
+
+    <!-- Section: Copyright -->
+
+    <section class="p-2 pt-0 text-center">
+
+      <div class="row d-flex align-items-center">
+
+        <div class="col-md-12 text-white" translate>
+
+          © 2020 Copyright: MDBootstrap.com
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Section: Copyright -->
+
+  </div>
+
+  <!-- Grid container -->
+
+</footer>

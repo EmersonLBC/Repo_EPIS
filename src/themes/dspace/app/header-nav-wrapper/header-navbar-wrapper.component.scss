@@ -1,0 +1,25 @@
+:host {
+  // The header-navbar-w rapper should not have a z-index, otherwise it would cover the media viewer despite its higher z-index
+  position: relative;
+  div#header-navbar-wrapper {
+    position: fixed;//SH agregue para que la barra de navegacion no se oculte
+    top: 0; //SH agregue para que la barra de navegacion no se oculte...
+    width: 100%;//SH agregue para que la barra de navegacion no se oculte
+    height: 84.44px; //SH agregue para que la barra de navegacion no se oculte
+    border-bottom: 5px var(--ds-header-navbar-border-bottom-color) solid;
+    z-index: var(--ds-nav-z-index);//SH agregue para que la barra de navegacion no se oculte
+   }
+
+   @media (max-width: 767px) { //SH para vista en mobiles
+    div#header-navbar-wrapper {
+      position: fixed;//SH agregue para que la barra de navegacion no se oculte
+      top: 0; //SH agregue para que la barra de navegacion no se oculte...
+      width: 100%;//SH agregue para que la barra de navegacion no se oculte
+      height: 96px; //SH agregue para que la barra de navegacion no se oculte
+      border-bottom: 5px var(--ds-header-navbar-border-bottom-color) solid;
+      z-index: var(--ds-nav-z-index);//SH agregue para que la barra de navegacion no se oculte
+    }
+  }
+
+  }
+
