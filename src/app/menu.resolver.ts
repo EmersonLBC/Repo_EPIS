@@ -112,6 +112,11 @@ export class MenuResolver implements Resolve<boolean> {
       .subscribe((browseDefListRD: RemoteData<PaginatedList<BrowseDefinition>>) => {
         if (browseDefListRD.hasSucceeded) {
           browseDefListRD.payload.page.forEach((browseDef: BrowseDefinition) => {
+              //SH If browseDef.id is 'srsc', omita esta iteración, omite cateogoria
+              if (browseDef.id === 'srsc') {
+                return;
+              }
+            
             menuList.push({
               id: `browse_global_by_${browseDef.id}`,
               parentID: 'browse_global',
